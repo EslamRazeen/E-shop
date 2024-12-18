@@ -41,7 +41,7 @@ reviewSchema.statics.calcAverageratingsAndQuantity = async function (
   const result = await this.aggregate([
     // 1) Get all reviews in specific product
     { $match: { product: productID } },
-    // 1) Grouping reviews based on productID and cal average ratings and quantity
+    // 2) Grouping reviews based on productID and cal average ratings and quantity
     {
       $group: {
         _id: "product",

@@ -6,7 +6,6 @@ const orderSchema = require("../models/schemaOrder");
 const cartSchema = require("../models/schemaCart");
 const productSchema = require("../models/shemaProduct");
 const factory = require("./handelersFactory");
-const { concurrency } = require("sharp");
 
 const createCashOrder = asyncHandler(async (req, res, next) => {
   // App settings, added by admin

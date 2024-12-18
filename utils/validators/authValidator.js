@@ -1,7 +1,7 @@
-const validator = require("../../middlewares/validatorMiddleware");
 const slugify = require("slugify");
-const { check, body } = require("express-validator");
-const { estimatedDocumentCount } = require("../../models/schemaUser");
+const { check } = require("express-validator");
+
+const validator = require("../../middlewares/validatorMiddleware");
 const UserSchema = require("../../models/schemaUser");
 
 const singupValidator = [
